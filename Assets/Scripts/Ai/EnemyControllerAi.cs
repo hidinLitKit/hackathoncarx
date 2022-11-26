@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using System.Linq;
 
 public class EnemyControllerAi : MonoBehaviour
 {
@@ -26,6 +27,7 @@ public class EnemyControllerAi : MonoBehaviour
             return health;
         }
         set{
+            health = value;
             if(health <= 0)
                 Die();
         }
@@ -40,6 +42,7 @@ public class EnemyControllerAi : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         collider = GetComponent<Collider>();
         rendere = GetComponent<Renderer>();
+        Health = maxHealth;
     }
 
     void Update()
@@ -87,7 +90,7 @@ public class EnemyControllerAi : MonoBehaviour
             }
         }
 
-        int index = Random.Range(0, appearPoints.Length - 1);
+        int index = Random.Range(0, appearPoints.Count - 1);
         transform.position = correctPoints[index].transform.position;
 
         IsDead = false;
