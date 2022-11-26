@@ -5,6 +5,7 @@ using UnityEngine;
 [AddComponentMenu("Nokobot/Modern Guns/Simple Shoot")]
 public class SimpleShoot : MonoBehaviour
 {
+
     [Header("Prefab Refrences")]
     public GameObject bulletPrefab;
     public GameObject casingPrefab;
@@ -19,6 +20,9 @@ public class SimpleShoot : MonoBehaviour
     [Tooltip("Specify time to destory the casing object")] [SerializeField] private float destroyTimer = 2f;
     [Tooltip("Bullet Speed")] [SerializeField] private float shotPower = 500f;
     [Tooltip("Casing Ejection Speed")] [SerializeField] private float ejectPower = 150f;
+    public int Current_Ammo = 10;
+    public int Total_Ammo = 100;
+    public int Max_Ammo = 10;
 
 
     void Start()
@@ -36,7 +40,14 @@ public class SimpleShoot : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             //Calls animation on the gun that has the relevant animation events that will fire
-            gunAnimator.SetTrigger("Fire");
+            if (Current_Ammo > 0)
+            {
+                gunAnimator.SetTrigger("Fire");
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            CasingRelease();
         }
     }
 
@@ -44,6 +55,7 @@ public class SimpleShoot : MonoBehaviour
     //This function creates the bullet behavior
     void Shoot()
     {
+
         if (muzzleFlashPrefab)
         {
             //Create the muzzle flash
@@ -59,8 +71,9 @@ public class SimpleShoot : MonoBehaviour
         { return; }
 
         // Create a bullet and add force on it in direction of the barrel
-        Instantiate(bulletPrefab, barrelLocation.position, barrelLocation.rotation).GetComponent<Rigidbody>().AddForce(barrelLocation.forward * shotPower);
-
+        GameObject bull = Instantiate(bulletPrefab, barrelLocation.position, barrelLocation.rotation);
+        bull.GetComponent<Rigidbody>().AddForce(barrelLocation.forward * shotPower);
+        Destroy(bull, 10f);
     }
 
     //This function creates a casing at the ejection slot
