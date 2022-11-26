@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: df806f33efb32f145a32f1595b22b1ae, type: 2}
 --- !u!1 &45563019
 GameObject:
   m_ObjectHideFlags: 0
@@ -140,7 +140,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &45563020
 BoxCollider:
@@ -237,7 +237,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &156368253
 BoxCollider:
@@ -732,7 +732,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &1383837354
 MeshCollider:
@@ -1699,11 +1699,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1519b57127d3eb54e93a5d6afd163eab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RunSpeed: 0
-  AttackDist: 0
-  TimeToRest: 0
+  appearPoints: []
+  RunSpeed: 5
+  AttackDist: 5
+  TimeToRest: 20
   IsDead: 0
-  maxHealth: 0
+  appearDist: 100
+  maxHealth: 5
 --- !u!54 &2094453588
 Rigidbody:
   m_ObjectHideFlags: 0
