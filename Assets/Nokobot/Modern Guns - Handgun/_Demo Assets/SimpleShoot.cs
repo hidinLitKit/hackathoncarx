@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
+using TMPro;
 
 [AddComponentMenu("Nokobot/Modern Guns/Simple Shoot")]
 public class SimpleShoot : MonoBehaviour
@@ -23,10 +25,20 @@ public class SimpleShoot : MonoBehaviour
     public int Current_Ammo = 10;
     public int Total_Ammo = 100;
     public int Max_Ammo = 10;
-
-
+    TMP_Text Reloading;
+    TMP_Text TMP_T_CA;
+    TMP_Text TMP_T_TA;
+    [SerializeField]float reloadTime;
+    public bool CanShoot = true;
     void Start()
     {
+
+        Reloading = GameObject.Find("Reloading...").GetComponent<TMP_Text>();
+        TMP_T_CA = GameObject.Find("AmmoCurrent/Max").GetComponent<TMP_Text>();
+        TMP_T_TA = GameObject.Find("AmmoTotal").GetComponent<TMP_Text>();
+        TMP_T_CA.text = Current_Ammo.ToString() + " / " + Max_Ammo.ToString();
+        TMP_T_TA.text = Total_Ammo.ToString();
+        Reloading.gameObject.SetActive(false);
         if (barrelLocation == null)
             barrelLocation = transform;
 
@@ -40,15 +52,19 @@ public class SimpleShoot : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             //Calls animation on the gun that has the relevant animation events that will fire
-            if (Current_Ammo > 0)
+            if (CanShoot)
             {
-                gunAnimator.SetTrigger("Fire");
-                //Shoot();
+                if (Current_Ammo > 0)
+                {
+                    gunAnimator.SetTrigger("Fire");
+                    Current_Ammo -= 1;
+                }
             }
+
         }
         if (Input.GetKeyDown(KeyCode.R))
         {
-            CasingRelease();
+            if (Current_Ammo < 10) { StartCoroutine(WaitForReload()); }
         }
     }
 
@@ -74,6 +90,7 @@ public class SimpleShoot : MonoBehaviour
         // Create a bullet and add force on it in direction of the barrel
         GameObject bull = Instantiate(bulletPrefab, barrelLocation.position, barrelLocation.rotation);
         bull.GetComponent<Rigidbody>().AddForce(barrelLocation.forward * shotPower);
+        RefreshAmmo();
         Destroy(bull, 10f);
     }
 
@@ -96,4 +113,25 @@ public class SimpleShoot : MonoBehaviour
         Destroy(tempCasing, destroyTimer);
     }
 
+    void Reload()
+    {
+        Total_Ammo -= Max_Ammo - Current_Ammo;
+        Current_Ammo = 10;
+        Reloading.gameObject.SetActive(false);
+        CanShoot = true;
+        RefreshAmmo();
+        StopCoroutine(WaitForReload());
+    }
+    IEnumerator WaitForReload()
+    {
+        CanShoot= false;
+        Reloading.gameObject.SetActive(true);
+        yield return new WaitForSeconds(reloadTime);
+        Reload();
+    }
+    public void RefreshAmmo()
+    {
+        TMP_T_CA.text = Current_Ammo.ToString() + " / " + Max_Ammo.ToString();
+        TMP_T_TA.text = Total_Ammo.ToString();
+    }
 }
