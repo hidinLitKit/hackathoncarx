@@ -33,7 +33,7 @@ public class SimpleShoot : MonoBehaviour
     void Start()
     {
 
-        Reloading = GameObject.Find("Reloading...").GetComponent<TMP_Text>();
+        Reloading = GameObject.Find("Reloading...").GetComponent<TMP_Text>();   
         TMP_T_CA = GameObject.Find("AmmoCurrent/Max").GetComponent<TMP_Text>();
         TMP_T_TA = GameObject.Find("AmmoTotal").GetComponent<TMP_Text>();
         TMP_T_CA.text = Current_Ammo.ToString() + " / " + Max_Ammo.ToString();
