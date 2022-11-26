@@ -18,6 +18,19 @@ public class EnemyControllerAi : MonoBehaviour
     Collider collider;
     Renderer rendere;
 
+    [SerializeField] int maxHealth;
+    int health;
+    public int Health{
+        get{
+            return health;
+        }
+        set{
+            if(health <= 0)
+                Die();
+        }
+    }
+
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -63,7 +76,7 @@ public class EnemyControllerAi : MonoBehaviour
     public void GetAlive()
     {
         IsDead = false;
-        
+        Health = maxHealth;
         collider.enabled = true;
         rendere.enabled = true;
     }
