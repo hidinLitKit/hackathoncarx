@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class EnemyControllerAi : MonoBehaviour
 {
-    List<GameObject> appearPoints;
+    public List<GameObject> appearPoints;
     public float RunSpeed;
     NavMeshAgent agent ;
     Animator anim;
@@ -17,6 +17,7 @@ public class EnemyControllerAi : MonoBehaviour
     public bool IsDead = false;
     Collider collider;
     Renderer rendere;
+    [SerializeField] float appearDist;
 
     [SerializeField] int maxHealth;
     int health;
@@ -75,6 +76,20 @@ public class EnemyControllerAi : MonoBehaviour
     }
     public void GetAlive()
     {
+        
+
+        List<GameObject> correctPoints = new List<GameObject>();
+        foreach(var point in appearPoints)
+        {
+            if(Vector3.Distance(player.transform.position, point.transform.position) <= appearDist)
+            {
+                correctPoints.Add(point);
+            }
+        }
+
+        int index = Random.Range(0, appearPoints.Length - 1);
+        transform.position = correctPoints[index].transform.position;
+
         IsDead = false;
         Health = maxHealth;
         collider.enabled = true;

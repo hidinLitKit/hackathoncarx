@@ -28,7 +28,7 @@ public class MenuController : MonoBehaviour
 
     public void Options()
     {
-        //options.setActive(true);
+        options.SetActive(true);
     }
 
     public void Exit()
