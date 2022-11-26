@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.UI;
-using UnityStandardAssets.CrossPlatformInput;
 
 public class PlayerInteraction: MonoBehaviour {
 
@@ -18,10 +17,10 @@ public class PlayerInteraction: MonoBehaviour {
     Camera cam;
 
     void Start() {
-        player = GameObject.Find("FirstPerson-AIO");
+        player = GameObject.FindGameObjectWithTag("Player");
         cam = Camera.main;
-        crosshair = GameObject.Find("Crosshair");
-        image =  crosshair.GetComponent<Image>();
+        //crosshair = GameObject.Find("Crosshair");
+        //image =  crosshair.GetComponent<Image>();
     }
 
     // Update is called once per frame
@@ -32,7 +31,7 @@ public class PlayerInteraction: MonoBehaviour {
             if (isEscOpen) Cursor.lockState = CursorLockMode.None;
             else Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = isEscOpen;
-            EscapeMenu.SetActive(isEscOpen);
+            //EscapeMenu.SetActive(isEscOpen);
             player.GetComponent<FirstPersonAIO>().ChangeSense();
 
         }
@@ -43,42 +42,44 @@ public class PlayerInteraction: MonoBehaviour {
         bool successfulHit = false;
 
         if (Physics.Raycast(ray, out hit, interactionDistance)) {
-            Interactable interactable = hit.collider.GetComponent < Interactable > ();
-
+            Interactable interactable = hit.collider.GetComponent<Interactable>();
+            Debug.Log(interactable);
             if (interactable != null) {
                 HandleInteraction(interactable);
-                interactionText.text = interactable.GetDescription();
-                successfulHit = true;
-                if (transparent)
-                { 
-                    image.color = new Color(image.color.r, image.color.g, image.color.b, 1f);
-                    transparent = !transparent;
-                    //Debug.Log("Change");
-                }
-                interactionHoldGO.SetActive(true);
+                ////interactionText.text = interactable.GetDescription();
+                //successfulHit = true;
+                //if (transparent)
+                //{ 
+                //    //image.color = new Color(image.color.r, image.color.g, image.color.b, 1f);
+                //    transparent = !transparent;
+                //    //Debug.Log("Change");
+                //}
+                //interactionHoldGO.SetActive(true);
             }
         }
 
         // if we miss, hide the UI
         if (!successfulHit) {
-            interactionText.text = "";
-            if (!transparent)
-            {
-                image.color = new Color(image.color.r, image.color.g, image.color.b, 0.5f);
-                transparent = !transparent;
-                //Debug.Log("change");
-            }
-            interactionHoldGO.SetActive(false);
+            //interactionText.text = "";
+            //if (!transparent)
+            //{
+            //    image.color = new Color(image.color.r, image.color.g, image.color.b, 0.5f);
+            //    transparent = !transparent;
+            //    //Debug.Log("change");
+            //}
+            //interactionHoldGO.SetActive(false);
         }
     }
 
     void HandleInteraction(Interactable interactable) {
         #if UNITY_STANDALONE
         KeyCode key = KeyCode.E;
+
         switch (interactable.interactionType) {
             case Interactable.InteractionType.Click:
                 // interaction type is click and we clicked the button -> interact
                 if (Input.GetKeyDown(key)) {
+                    Debug.Log("use");
                     interactable.Interact();
                 }
                 break;

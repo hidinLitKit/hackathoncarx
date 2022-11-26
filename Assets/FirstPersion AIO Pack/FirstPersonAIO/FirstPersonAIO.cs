@@ -356,7 +356,7 @@ public class FirstPersonAIO : MonoBehaviour {
         originalLocalPosition = snapHeadjointToCapsul ? new Vector3(head.localPosition.x, (capsule.height/2)*head.localScale.y ,head.localPosition.z) : head.localPosition;
         if(GetComponent<AudioSource>() == null) { gameObject.AddComponent<AudioSource>(); }
 
-        previousPosition = fps_Rigidbody.position;
+        previousPosition = fps_Rigidbody.position;  
         audioSource = GetComponent<AudioSource>();
         #endregion
     }
@@ -701,6 +701,7 @@ public class FirstPersonAIO : MonoBehaviour {
                     {
                         if(!previousGrounded)
                         {
+                            if(dynamicFootstep.currentClipSet.Any()) { audioSource.PlayOneShot(dynamicFootstep.currentClipSet[Random.Range(0, dynamicFootstep.currentClipSet.Count)],Volume/10); }
                             if(dynamicFootstep.currentClipSet.Any()) { audioSource.PlayOneShot(dynamicFootstep.currentClipSet[Random.Range(0, dynamicFootstep.currentClipSet.Count)],Volume/10); }
                             nextStepTime = headbobCycle + 0.5f;
                         } else
