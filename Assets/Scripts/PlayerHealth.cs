@@ -32,7 +32,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void PlayerIsDead()
     {
-
+            
     }
 
     public void TakeDamage(int damage)
