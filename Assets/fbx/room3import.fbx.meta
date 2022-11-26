@@ -1,0 +1,436 @@
+fileFormatVersion: 2
+guid: b5722c2dad724e94b9711f2f1de141cd
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BaseGrayConcrete
+    second: {fileID: 2100000, guid: 7a9dd2b92a7f5084aaed914d1e4c4e0b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: ff5d9e9800fa3824582435bdc053b595, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 88eab268b4088324d9b6df5584f375da, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blackWall
+    second: {fileID: 2100000, guid: 4b00b140ee19e684692d100bd0cf6966, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blue door
+    second: {fileID: 2100000, guid: c0fea2ae86fd2bb4e9a5d5508d8463fb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: box
+    second: {fileID: 2100000, guid: fe63d77c53df639449787c67439d5dc5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bunkerdoorwheel
+    second: {fileID: 2100000, guid: cb08709ee5906c74193062a9de184752, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cardboard.002
+    second: {fileID: 2100000, guid: fceb516aaab75ba459d00b507caa51f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ceiling
+    second: {fileID: 2100000, guid: 0ff1107a5c95ee64782dd79b94bfc5d9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ceilingBord.002
+    second: {fileID: 2100000, guid: 28247b4a330e75f43b3a051f02856608, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: door1.002
+    second: {fileID: 2100000, guid: 50ee6c0d6e9cfbe4280554ac45c6a2d9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: doorMech
+    second: {fileID: 2100000, guid: 8780eb50ae04739428ffbebfad34ec6a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fuse2
+    second: {fileID: 2100000, guid: 47139e941ce9cc145bb7f5495009f9e4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fusebox
+    second: {fileID: 2100000, guid: 52d2ef6e3ba8b924393d26f43d06f664, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fusebox2
+    second: {fileID: 2100000, guid: b3c53bafc8427f6478c6eadeae5e2f93, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: greeanchair
+    second: {fileID: 2100000, guid: 531af0168082ccb449bc7aba78d1aff5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: greenwall3.003
+    second: {fileID: 2100000, guid: f8111899bfd9cfb439e4c5e8372cfadd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: greenwallHEAVYdmg.003
+    second: {fileID: 2100000, guid: ac0d121b7ffe5bc4f801b5051c24b59b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: greenwallLIGHTdmg.003
+    second: {fileID: 2100000, guid: 422fb5e353e886c48b01250d6d404e34, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: greenwallNOdmg.003
+    second: {fileID: 2100000, guid: ab3f3ef75fde688478a9ae0a7f28966c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: house
+    second: {fileID: 2100000, guid: d3feb0c0031471040864c2d44545b529, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: house2
+    second: {fileID: 2100000, guid: b357680547e586442a878b6c054f8a8a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: house3
+    second: {fileID: 2100000, guid: 266cb6ba7d5f5c94e9e28b5a4bceb0da, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal2
+    second: {fileID: 2100000, guid: 5b6b6255cb5b01a43936b6a7d0581ae7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metaldoor
+    second: {fileID: 2100000, guid: db687604d786f7849ab7c69f9932beae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: newconcr
+    second: {fileID: 2100000, guid: 17b9d89909eda044ebae0069397d98dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pipe1.001
+    second: {fileID: 2100000, guid: f9be4a6046de1e849adbc9f08c066ded, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plasterWall
+    second: {fileID: 2100000, guid: 63a561246236a744a9b21a507965773a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: red
+    second: {fileID: 2100000, guid: 4d981b6c54907b147b4b24d921402606, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: truba.001
+    second: {fileID: 2100000, guid: a15d0ff433444ca41b8bbc3ab2094101, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: truba.002
+    second: {fileID: 2100000, guid: 94afabd40523be741a806e0190ac55b8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wheel
+    second: {fileID: 2100000, guid: 1ca7130791a672942a064656fa4a53ec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: whitemetal
+    second: {fileID: 2100000, guid: 639c18e896ea5064e9254a4ec1a9f03f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wrapped.002
+    second: {fileID: 2100000, guid: 987d058fbfe0d8d44852d6af2b8094b8, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 9ba66af1cee4d04c73aa8dc366dbd653
+    second: {fileID: 2800000, guid: 4b026a108681e834f9e139971d8efc96, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BaseConcrete
+    second: {fileID: 2800000, guid: 5a6799fd28b577a42b723b990389f026, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_BuildingsTallHouse0053_S
+    second: {fileID: 2800000, guid: 2b0a6b847069e0845a16b62d8735b25d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_BuildingsTallHouse0057_S
+    second: {fileID: 2800000, guid: 41cf70c741e6bc748a4f77cc16273052, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_FuseBox0012_S
+    second: {fileID: 2800000, guid: 73a9162a58a62524aad071271faee9fe, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_Metal_Corrugated_512_albedo
+    second: {fileID: 2800000, guid: 926e6d8a1a48d5b4494d808bff765be5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_PlasterWhiteWorn0088_1_seamless_S
+    second: {fileID: 2800000, guid: 535d7cd0333d0814e9376c15263a0492, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_Roads0172_2_S
+    second: {fileID: 2800000, guid: eaeb5a5f0ca5ed04ca75d750b865b332, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: badmetal
+    second: {fileID: 2800000, guid: 5e279ef8f8fcbdf43b9ca262da42775f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: blackPlaster
+    second: {fileID: 2800000, guid: 20ea1492bb442fc4ca3fa5465c6d13db, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: blue door
+    second: {fileID: 2800000, guid: f1915491200ebc14c875c6049fe19546, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bunkerdoorwheel
+    second: {fileID: 2800000, guid: e6fb481fd091c2d4c98d200cf1943657, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cardboard
+    second: {fileID: 2800000, guid: 8a76697406ad73e4fafade1ef68fb01f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ceiling
+    second: {fileID: 2800000, guid: 282d66029ac282e47af3167167b2191b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: door1
+    second: {fileID: 2800000, guid: df3fa9a5220fdfa4087f1238b82d55b1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: door3
+    second: {fileID: 2800000, guid: 44c69f1bbec66d540ae09322b49e2bd3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: door5
+    second: {fileID: 2800000, guid: 4f1a01602d5d46d42bb2637141f9a80d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: forUNDpotolokSEAM
+    second: {fileID: 2800000, guid: 31fc7bf4b15a12f4fa99e024afc300d3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: fuse box
+    second: {fileID: 2800000, guid: b3ab33f41a223354b92139192ac8f382, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: fuse6
+    second: {fileID: 2800000, guid: f7aac40fa6b6f2743a2b910693e07ef7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: greeangr
+    second: {fileID: 2800000, guid: 5e08d58be5171ef4bb2eb51777a49265, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: greenwall2SEAM
+    second: {fileID: 2800000, guid: a1af1ad2a3a29104fbe39212b3feeef7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: greenwallLIghDMGSEAM
+    second: {fileID: 2800000, guid: 08f8a89cd3082c04f89fd2513df28d50, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: greenwallSEAMHEAVYDMG
+    second: {fileID: 2800000, guid: 89da54a03f342f44283ee6f1a7aa8161, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: greenwallSEAMLESSNODMG
+    second: {fileID: 2800000, guid: 4a3ccfb88cb1af44eb67342575955e26, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: marble
+    second: {fileID: 2800000, guid: 81e08a33569ed8e49a8c3c8c9b07a562, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: metal
+    second: {fileID: 2800000, guid: 623f1c26be7b04c4083461cec1ce451c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: newconcrseamless
+    second: {fileID: 2800000, guid: 2c718e7ee05e2ec4c86c6f63505cc9f3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: pipe1
+    second: {fileID: 2800000, guid: fdc7c6d43dc8b8b4488ecc5484829ba7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: plasterkitchwall
+    second: {fileID: 2800000, guid: 37e6129c463f02c4aa264f00d6701100, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wheel
+    second: {fileID: 2800000, guid: f0631f1c2f213aa4f8c69aa04f7aeb8f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: woodenbox
+    second: {fileID: 2800000, guid: dd5f49d291a11654eac5b157987567cf, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
