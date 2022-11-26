@@ -53,6 +53,8 @@ Material:
     - Vector1_61f8b247bec64fac95a2d3f57cabd044: 1
     - Vector1_7b4e7b31e8a84ebc87c9068264f50a68: 1
     - Vector1_8aa0e2210c974603baa958c70c7d7f5c: 0.02
+    - _QueueControl: 0
+    - _QueueOffset: 0
     m_Colors:
     - Color_08480c47c60042d399f2ab1dfeeedf16: {r: 0.22495545, g: 0.37130862, b: 0.8396226,
         a: 0}
