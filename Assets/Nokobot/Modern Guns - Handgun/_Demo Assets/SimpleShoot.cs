@@ -43,6 +43,7 @@ public class SimpleShoot : MonoBehaviour
             if (Current_Ammo > 0)
             {
                 gunAnimator.SetTrigger("Fire");
+                //Shoot();
             }
         }
         if (Input.GetKeyDown(KeyCode.R))
